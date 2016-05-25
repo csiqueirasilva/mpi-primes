@@ -7,4 +7,4 @@ Processo rank 4 buscou 31 inteiros entre 125 e 155, e encontrou 6 primos: 127 13
 Processo rank 5 buscou 31 inteiros entre 156 e 186, e encontrou 6 primos: 157 163 167 173 179 181 
 Processo rank 6 buscou 31 inteiros entre 187 e 217, e encontrou 5 primos: 191 193 197 199 211 
 Processo rank 7 buscou 38 inteiros entre 218 e 255, e encontrou 7 primos: 223 227 229 233 239 241 251 
-Foram encontrados 54 primos no total entre 1 e 255
+Usando 8 processos paralelos, foram encontrados 54 primos entre 1 e 255

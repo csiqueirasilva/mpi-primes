@@ -15,4 +15,4 @@ Processo rank 12 buscou 62 inteiros entre 745 e 806, e encontrou 7 primos: 751 7
 Processo rank 13 buscou 62 inteiros entre 807 e 868, e encontrou 11 primos: 809 811 821 823 827 829 839 853 857 859 863 
 Processo rank 14 buscou 62 inteiros entre 869 e 930, e encontrou 8 primos: 877 881 883 887 907 911 919 929 
 Processo rank 15 buscou 70 inteiros entre 931 e 1000, e encontrou 10 primos: 937 941 947 953 967 971 977 983 991 997 
-Foram encontrados 168 primos no total entre 1 e 1000
+Usando 16 processos paralelos, foram encontrados 168 primos entre 1 e 1000

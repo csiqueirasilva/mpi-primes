@@ -1,0 +1,27 @@
+Buscando primos entre 1 e 2500 ...
+Processo rank 0 buscou 100 inteiros entre 1 e 100, e encontrou 25 primos: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
+Processo rank 1 buscou 100 inteiros entre 101 e 200, e encontrou 21 primos: 101 103 107 109 113 127 131 137 139 149 151 157 163 167 173 179 181 191 193 197 199 
+Processo rank 2 buscou 100 inteiros entre 201 e 300, e encontrou 16 primos: 211 223 227 229 233 239 241 251 257 263 269 271 277 281 283 293 
+Processo rank 3 buscou 100 inteiros entre 301 e 400, e encontrou 16 primos: 307 311 313 317 331 337 347 349 353 359 367 373 379 383 389 397 
+Processo rank 4 buscou 100 inteiros entre 401 e 500, e encontrou 17 primos: 401 409 419 421 431 433 439 443 449 457 461 463 467 479 487 491 499 
+Processo rank 5 buscou 100 inteiros entre 501 e 600, e encontrou 14 primos: 503 509 521 523 541 547 557 563 569 571 577 587 593 599 
+Processo rank 6 buscou 100 inteiros entre 601 e 700, e encontrou 16 primos: 601 607 613 617 619 631 641 643 647 653 659 661 673 677 683 691 
+Processo rank 7 buscou 100 inteiros entre 701 e 800, e encontrou 14 primos: 701 709 719 727 733 739 743 751 757 761 769 773 787 797 
+Processo rank 8 buscou 100 inteiros entre 801 e 900, e encontrou 15 primos: 809 811 821 823 827 829 839 853 857 859 863 877 881 883 887 
+Processo rank 9 buscou 100 inteiros entre 901 e 1000, e encontrou 14 primos: 907 911 919 929 937 941 947 953 967 971 977 983 991 997 
+Processo rank 10 buscou 100 inteiros entre 1001 e 1100, e encontrou 16 primos: 1009 1013 1019 1021 1031 1033 1039 1049 1051 1061 1063 1069 1087 1091 1093 1097 
+Processo rank 11 buscou 100 inteiros entre 1101 e 1200, e encontrou 12 primos: 1103 1109 1117 1123 1129 1151 1153 1163 1171 1181 1187 1193 
+Processo rank 12 buscou 100 inteiros entre 1201 e 1300, e encontrou 15 primos: 1201 1213 1217 1223 1229 1231 1237 1249 1259 1277 1279 1283 1289 1291 1297 
+Processo rank 13 buscou 100 inteiros entre 1301 e 1400, e encontrou 11 primos: 1301 1303 1307 1319 1321 1327 1361 1367 1373 1381 1399 
+Processo rank 14 buscou 100 inteiros entre 1401 e 1500, e encontrou 17 primos: 1409 1423 1427 1429 1433 1439 1447 1451 1453 1459 1471 1481 1483 1487 1489 1493 1499 
+Processo rank 15 buscou 100 inteiros entre 1501 e 1600, e encontrou 12 primos: 1511 1523 1531 1543 1549 1553 1559 1567 1571 1579 1583 1597 
+Processo rank 16 buscou 100 inteiros entre 1601 e 1700, e encontrou 15 primos: 1601 1607 1609 1613 1619 1621 1627 1637 1657 1663 1667 1669 1693 1697 1699 
+Processo rank 17 buscou 100 inteiros entre 1701 e 1800, e encontrou 12 primos: 1709 1721 1723 1733 1741 1747 1753 1759 1777 1783 1787 1789 
+Processo rank 18 buscou 100 inteiros entre 1801 e 1900, e encontrou 12 primos: 1801 1811 1823 1831 1847 1861 1867 1871 1873 1877 1879 1889 
+Processo rank 19 buscou 100 inteiros entre 1901 e 2000, e encontrou 13 primos: 1901 1907 1913 1931 1933 1949 1951 1973 1979 1987 1993 1997 1999 
+Processo rank 20 buscou 100 inteiros entre 2001 e 2100, e encontrou 14 primos: 2003 2011 2017 2027 2029 2039 2053 2063 2069 2081 2083 2087 2089 2099 
+Processo rank 21 buscou 100 inteiros entre 2101 e 2200, e encontrou 10 primos: 2111 2113 2129 2131 2137 2141 2143 2153 2161 2179 
+Processo rank 22 buscou 100 inteiros entre 2201 e 2300, e encontrou 15 primos: 2203 2207 2213 2221 2237 2239 2243 2251 2267 2269 2273 2281 2287 2293 2297 
+Processo rank 23 buscou 100 inteiros entre 2301 e 2400, e encontrou 15 primos: 2309 2311 2333 2339 2341 2347 2351 2357 2371 2377 2381 2383 2389 2393 2399 
+Processo rank 24 buscou 100 inteiros entre 2401 e 2500, e encontrou 10 primos: 2411 2417 2423 2437 2441 2447 2459 2467 2473 2477 
+Usando 25 processos paralelos, foram encontrados 367 primos entre 1 e 2500
