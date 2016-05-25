@@ -157,7 +157,7 @@ int main (int argc, char* argv[]) {
 			totalPrimesFound += recvFound;
 		}
 		usleep(size * DELAY_MSG_MICRO);
-		printf("Foram encontrados %d primos no total entre %d e %d\n", totalPrimesFound, TASK_INI_NUMBER, topLimit);
+		printf("Usando %d processos paralelos, foram encontrados %d primos entre %d e %d\n", size, totalPrimesFound, TASK_INI_NUMBER, topLimit);
 	} else {
 		MPI_Send(&taskTotalFound, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
 	}
