@@ -1,0 +1,5 @@
+Buscando primos entre 1 e 10 ...
+Processo rank 0 buscou 3 inteiros entre 1 e 3, e encontrou 2 primos: 2 3 
+Processo rank 1 buscou 3 inteiros entre 4 e 6, e encontrou 1 primos: 5 
+Processo rank 2 buscou 4 inteiros entre 7 e 10, e encontrou 1 primos: 7 
+Foram encontrados 4 primos no total entre 1 e 10
