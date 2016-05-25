@@ -1,5 +1,18 @@
-Buscando primos entre 1 e 10 ...
-Processo rank 0 buscou 3 inteiros entre 1 e 3, e encontrou 2 primos: 2 3 
-Processo rank 1 buscou 3 inteiros entre 4 e 6, e encontrou 1 primos: 5 
-Processo rank 2 buscou 4 inteiros entre 7 e 10, e encontrou 1 primos: 7 
-Foram encontrados 4 primos no total entre 1 e 10
+Buscando primos entre 1 e 1000 ...
+Processo rank 0 buscou 62 inteiros entre 1 e 62, e encontrou 18 primos: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 
+Processo rank 1 buscou 62 inteiros entre 63 e 124, e encontrou 12 primos: 67 71 73 79 83 89 97 101 103 107 109 113 
+Processo rank 2 buscou 62 inteiros entre 125 e 186, e encontrou 12 primos: 127 131 137 139 149 151 157 163 167 173 179 181 
+Processo rank 3 buscou 62 inteiros entre 187 e 248, e encontrou 11 primos: 191 193 197 199 211 223 227 229 233 239 241 
+Processo rank 4 buscou 62 inteiros entre 249 e 310, e encontrou 10 primos: 251 257 263 269 271 277 281 283 293 307 
+Processo rank 5 buscou 62 inteiros entre 311 e 372, e encontrou 10 primos: 311 313 317 331 337 347 349 353 359 367 
+Processo rank 6 buscou 62 inteiros entre 373 e 434, e encontrou 11 primos: 373 379 383 389 397 401 409 419 421 431 433 
+Processo rank 7 buscou 62 inteiros entre 435 e 496, e encontrou 10 primos: 439 443 449 457 461 463 467 479 487 491 
+Processo rank 8 buscou 62 inteiros entre 497 e 558, e encontrou 8 primos: 499 503 509 521 523 541 547 557 
+Processo rank 9 buscou 62 inteiros entre 559 e 620, e encontrou 12 primos: 563 569 571 577 587 593 599 601 607 613 617 619 
+Processo rank 10 buscou 62 inteiros entre 621 e 682, e encontrou 9 primos: 631 641 643 647 653 659 661 673 677 
+Processo rank 11 buscou 62 inteiros entre 683 e 744, e encontrou 9 primos: 683 691 701 709 719 727 733 739 743 
+Processo rank 12 buscou 62 inteiros entre 745 e 806, e encontrou 7 primos: 751 757 761 769 773 787 797 
+Processo rank 13 buscou 62 inteiros entre 807 e 868, e encontrou 11 primos: 809 811 821 823 827 829 839 853 857 859 863 
+Processo rank 14 buscou 62 inteiros entre 869 e 930, e encontrou 8 primos: 877 881 883 887 907 911 919 929 
+Processo rank 15 buscou 70 inteiros entre 931 e 1000, e encontrou 10 primos: 937 941 947 953 967 971 977 983 991 997 
+Foram encontrados 168 primos no total entre 1 e 1000
