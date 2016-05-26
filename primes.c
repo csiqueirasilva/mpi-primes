@@ -9,8 +9,6 @@
 #define TRUE 1
 #define FALSE 0
 
-#define TASK_INI_NUMBER 1
-
 int primeTest (int n) {
 	int i = 2;
 	int ret = TRUE;
@@ -40,18 +38,18 @@ int findPrimeInInterval(int ini, int end, int * primes) {
 	return ret;
 }
 
-int taskDivision(int size, int topLimitTest) {
+int taskDivision(int size, int qtt) {
 	int i;
-	int buffLimit = topLimitTest;
+	int buffLimit = qtt;
 	int divMaster = 0;
 
 	if(size > 0) {
 
-		divMaster = topLimitTest / size;
+		divMaster = qtt / size;
 		buffLimit -= divMaster;
 
 		for(i = 1; i < size; i++) {
-			int div = topLimitTest / size;
+			int div = qtt / size;
 			buffLimit -= div;
 			if(buffLimit != 0 && i == (size - 1)) {
 				div += buffLimit;
@@ -97,20 +95,30 @@ char * printPrimesArray(int * primes) {
 int main (int argc, char* argv[]) {
 	int rank, size;
 	int topLimit;
+	int bottomLimit;
 	int taskEnd;
 	int taskIni;
+	int domainSize;
 	int taskSize;
 	int taskTotalFound = 0;
 	int * primesFound;
 	char * taskFoundString;
 	MPI_Status status;
 
-	if(argc < 2) {
-		printf("ERRO! Nao ha parametros suficientes.");
+	if(argc < 3) {
+		printf("ERRO! Nao ha parametros suficientes.\n");
 		exit(-1);
+
 	}
 
-	topLimit = atoi(argv[1]);
+	topLimit = atoi(argv[2]);
+	bottomLimit = atoi(argv[1]);
+	domainSize = topLimit - bottomLimit + 1; // +1 since its inclusive
+
+	if(domainSize < 0) {
+		printf("ERRO! Numero inicial maior que final.\n");
+		exit(-1);
+	}
 
 	MPI_Init(&argc, &argv);
 
@@ -118,20 +126,18 @@ int main (int argc, char* argv[]) {
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
 	if(rank == 0) {
-		printf("Buscando primos entre %d e %d ...\n", TASK_INI_NUMBER, topLimit);
-		taskSize = taskDivision(size, topLimit);
-		taskIni = TASK_INI_NUMBER;
-		taskEnd = taskSize;
-		primesFound = (int *) malloc(sizeof(int) * (taskSize + 1));
+		printf("Buscando primos entre %d e %d ...\n", bottomLimit, topLimit);
+		taskSize = taskDivision(size, domainSize);
+		taskIni = bottomLimit;
 	} else {
 		int divRecv;
 		MPI_Recv(&divRecv, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, &status);
 		taskSize = divRecv;
-		taskIni = (topLimit / size) * rank;
-		taskEnd = taskIni + taskSize;
-		taskIni += 1;
-		primesFound = (int *) malloc(sizeof(int) * taskSize);
+		taskIni = bottomLimit + (domainSize / size) * rank;
 	}
+
+	taskEnd = taskIni + taskSize - 1;
+	primesFound = (int *) malloc(sizeof(int) * (taskSize + 1));
 
 	primesFound[0] = 0;
 	taskTotalFound = findPrimeInInterval(taskIni, taskEnd, primesFound);
@@ -157,7 +163,7 @@ int main (int argc, char* argv[]) {
 			totalPrimesFound += recvFound;
 		}
 		usleep(size * DELAY_MSG_MICRO);
-		printf("Usando %d processos paralelos, foram encontrados %d primos entre %d e %d\n", size, totalPrimesFound, TASK_INI_NUMBER, topLimit);
+		printf("Usando %d processos paralelos, foram encontrados %d primos entre %d e %d\n", size, totalPrimesFound, bottomLimit, topLimit);
 	} else {
 		MPI_Send(&taskTotalFound, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
 	}
