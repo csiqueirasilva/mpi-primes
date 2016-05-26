@@ -10,5 +10,5 @@ Finding primes using MPI
 ## Generating samples
 > ./generate-samples.sh
 
-## Running the program (example using 16 processes with a search range from 1 to 1000)
-> mpirun -np 16 ./output 1000 > exemplo1000.txt
+## Running the program (example using 16 processes with a search range from 500 to 1000)
+> mpirun -np 16 ./output 500 1000
